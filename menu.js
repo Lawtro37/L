@@ -4,7 +4,7 @@ var gamestate = "in house", gameMode = "play"
 var slum1, slum2, slum3
 var backcolur = 0, backcolur2 = 0, backcolur3 = 0
 var pX, hills, guy, $ = 0.00, job$ = 0.00, subToatal = 0
-var speed = 2, day = 1, week = 0, doneJob = 0
+var speed = 2, Day = 1, week = 0, doneJob = 0
 
 var bricks = 0, goodGlass = 0, okGlass = 0, badGlass = 0, runTime = 10.00
 
@@ -310,9 +310,9 @@ function draw() {
       $ -= 3
       x = 0
       subToatal = job$ - 3
-      if(day == 7)
+      if(Day == 7)
       {
-        day = 0
+        Day = 0
         week += 1
         $ -= 10
         subToatal -= 10
@@ -551,9 +551,9 @@ function draw() {
       day += 1
       $ -= 3
       subToatal = job$ - 3
-      if(day == 7)
+      if(Day == 7)
       {
-        day = 0
+        Day = 0
         week += 1
         $ -= 10
         subToatal -= 10
